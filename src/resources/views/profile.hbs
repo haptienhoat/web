@@ -1,0 +1,39 @@
+<div class="container">
+  <h3>Thông tin tài khoản</h3>
+  <form action="/profile/{{profile.username}}/update" method="post">
+    <div class="form-group">
+      <label for="profile">Tài khoản</label>
+      <input type="text" class="form-control" id="username" name="username" aplaceholder="Tài khoản"
+        value="{{profile.username}}" readonly>
+    </div>
+    <div class="form-group">
+      <label for="profile">Họ và tên</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Họ và tên" value="{{profile.name}}">
+    </div>
+    <div class="form-group">
+      <label for="profile">Email</label>
+      <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="{{profile.email}}">
+    </div>
+    <div class="form-group">
+      <label for="profile">Địa chỉ</label>
+      <input type="text" class="form-control" id="address" name="address" placeholder="Địa chỉ"
+        value="{{profile.address}}">
+    </div>
+    <div class="form-group">
+      <label for="profile">Số điện thoại</label>
+      <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Số điện thoại"
+        value="{{profile.phone_number}}">
+    </div>
+    <div class="form-group">
+      <label for="profile">Giới tính</label>
+      <input type="text" class="form-control" id="gender" name="gender" placeholder="Giới tính"
+        value="{{profile.gender}}">
+    </div>
+    <div class="form-group">
+      <label for="profile">Ngày sinh</label>
+      <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" placeholder="Ngày sinh"
+        value="{{profile.date_of_birth}}">
+    </div>
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+  </form>
+</div>

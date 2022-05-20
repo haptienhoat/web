@@ -1,0 +1,22 @@
+<div class="cart">
+    <h1 class="text-cart">Danh sách sản phẩm</h1>
+    {{#each cart}}
+    <div class="block-cart">
+        <div>
+            <img class="img-product-cart" src="{{this.image}}" alt="{{this.name}}">
+        </div>
+        <div class="description-product-cart">
+            <h5>{{this.name}}</h5>
+            <p>{{this.name}}</p>
+            <p> Giá: {{this.price}}</p>
+            <a href="/cart/{{this.name}}/remove" class="btn btn-primary">Xóa khỏi giỏ hàng</a>
+        </div>
+    </div>
+    <hr>
+    {{/each}}
+    <div class="total-product-cart">
+        <p>Tổng tiền:</p>
+        <p>{{totalprice}} đồng</p>
+    </div>
+    <a href="/cart/order" class="btn btn-primary order">Đặt hàng</a>
+</div>
